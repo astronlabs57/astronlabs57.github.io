@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy – Charge Locator · Astron Labs</title>
+    <meta name="description" content="Privacy Policy for the Charge Locator Android app by Astron Labs, including location data and third-party map and charging-station services.">
+    <meta name="theme-color" content="#18181B">
+    <link rel="canonical" href="https://astronlabs.dev/privacy/chargelocator.html">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233F3F46'/%3E%3Cstop offset='1' stop-color='%2318181B'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Cpath d='M32 14 46 50h-7l-3-8H28l-3 8h-7zm0 12-2.6 10h5.2z' fill='%23fff'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="/assets/legal.css">
+</head>
+<body>
+    <header>
+        <div class="wrap nav">
+            <a class="logo" href="/" aria-label="Astron Labs home">
+                <span class="logo-mark" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 64 64"><path d="M32 6 52 58h-10l-4-11H26l-4 11H12zm0 18-3.8 14h7.6z" fill="currentColor"/></svg></span>
+                Astron Labs
+            </a>
+            <a class="back" href="/privacy.html">&larr; All privacy policies</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrap">
+            <article class="doc">
+                <span class="kicker">Charge Locator</span>
+                <h1>Privacy Policy</h1>
+                <p class="updated">Last updated: November 23, 2026</p>
+
+                <p>This Privacy Policy explains how the Android app <strong>Charge Locator</strong> (package <code>com.astronlabs.chargelocator</code>, "the App") handles your data. In short: the App has <strong>no user accounts</strong>. To show charging stations near you, the App uses your location <strong>only while you use it</strong> and sends the coordinates of the search area to open charging-station and map data services. Only your last known position is kept <strong>on your device</strong> (for the home-screen widget).</p>
+
+                <nav class="toc" aria-label="Contents">
+                    <p>Contents</p>
+                    <ol>
+                        <li><a href="#controller">Controller</a></li>
+                        <li><a href="#location">Location data</a></li>
+                        <li><a href="#services">Map &amp; station services</a></li>
+                        <li><a href="#local">Data stored on your device</a></li>
+                        <li><a href="#ads">Advertising &amp; consent</a></li>
+                        <li><a href="#crash">Crash reports &amp; app rating</a></li>
+                        <li><a href="#backup">Android backup</a></li>
+                        <li><a href="#permissions">Permissions</a></li>
+                        <li><a href="#children">Children</a></li>
+                        <li><a href="#sharing">Data sharing &amp; transfers</a></li>
+                        <li><a href="#deletion">Retention &amp; deletion</a></li>
+                        <li><a href="#rights">Your rights</a></li>
+                        <li><a href="#changes">Changes &amp; contact</a></li>
+                    </ol>
+                </nav>
+
+                <h2 id="controller">1. Controller</h2>
+                <p>The controller responsible for data processing within the meaning of the EU General Data Protection Regulation (GDPR) is:</p>
+                <address>
+                    <strong>Artur Krigler</strong> (Astron Labs)<br>
+                    Karl-Knödl-Straße 119<br>
+                    40627 Düsseldorf<br>
+                    Germany<br>
+                    Email: <a href="mailto:astron.labs57@gmail.com">astron.labs57@gmail.com</a>
+                </address>
+
+                <h2 id="location">2. Location data</h2>
+                <ul>
+                    <li><strong>Purpose:</strong> to center the map on your position, find charging stations nearby, show your position on the map and calculate distances.</li>
+                    <li><strong>When:</strong> only while the App is open and only after you have granted the location permission. You can grant <em>precise</em> or <em>approximate</em> location; the App works with both. The App determines your position when it starts (and when you ask it to locate you) — there is <strong>no continuous tracking and no background location access</strong>.</li>
+                    <li><strong>Storage:</strong> the last position found while the App was open (latitude, longitude and time) is saved <strong>locally on your device</strong>, so the home-screen widget can show nearby stations without background location access. It is overwritten with each new fix, is never sent to us, and may be included in Android backup (see <a href="#backup">section 7</a>).</li>
+                    <li><strong>Location provider:</strong> your position is determined via Android's location services / Google Play services (Fused Location Provider), which are subject to Google's own privacy terms.</li>
+                    <li><strong>Transmission:</strong> to search for stations, the coordinates of the search area (your position or a place you searched for) and the search radius are sent to the station services listed in <a href="#services">section 3</a>.</li>
+                    <li><strong>Address search:</strong> if you search for a place, the search text is converted to coordinates using your device's built-in Android geocoding service (usually provided by Google Play services).</li>
+                    <li><strong>Legal basis:</strong> Art. 6(1)(b) GDPR (providing the station search you requested) and your decision to grant the Android location permission, which you can revoke at any time in your device settings. Without location access, you can still search for places manually.</li>
+                </ul>
+
+                <h2 id="services">3. Map &amp; station services</h2>
+                <p>The App connects directly from your device to the following services. Except for the live-status files, which we publish as static files on Cloudflare's storage service (Cloudflare acts as our processor and does not receive any identifiers from the App), these are independent third-party services. Each receives your <strong>IP address</strong> and the technical data of the request, plus the data listed below. The App identifies itself with its name and version; no Advertising ID or other identifiers are sent to these services.</p>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Service</th><th>Purpose</th><th>Data sent</th></tr></thead>
+                        <tbody>
+                            <tr><td><strong>Open Charge Map</strong><br><a href="https://openchargemap.org" target="_blank" rel="noopener">openchargemap.org</a></td><td>Charging station data</td><td>Coordinates of the search area and radius</td></tr>
+                            <tr><td><strong>Overpass API</strong> (OpenStreetMap data)<br><a href="https://overpass-api.de" target="_blank" rel="noopener">overpass-api.de</a>, fallback mirror overpass.private.coffee</td><td>Charging station data from OpenStreetMap</td><td>Coordinates of the search area and radius</td></tr>
+                            <tr><td><strong>OpenFreeMap</strong><br><a href="https://openfreemap.org" target="_blank" rel="noopener">openfreemap.org</a></td><td>Map display (map tiles and styles)</td><td>The map area you are viewing</td></tr>
+                            <tr><td><strong>Astron Labs live status</strong><br>live.astronlabs.dev (hosted on Cloudflare R2, Cloudflare, Inc.)</td><td>Live availability of charging points</td><td>The coarse map tiles (approx. 150 km grid cells) covering the area you are viewing; refreshed at most every 2 minutes while the map is open</td></tr>
+                            <tr><td><strong>GitHub</strong> (GitHub, Inc.)<br><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">Privacy Statement</a></td><td>Downloading offline country data packs you enable</td><td>The selected country pack (no location)</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>Offline country data is only downloaded if you switch it on for a country. It is then updated about every 3 days. Actions such as starting navigation, calling a station or sharing a station only happen when you tap them and hand the station's details to the app you choose (e.g. Google Maps, your phone app).</p>
+
+                <h2 id="local">4. Data stored on your device</h2>
+                <p>The following data is stored <strong>locally in the App's private storage</strong> and is not transmitted to us:</p>
+                <ul>
+                    <li>Favorite charging stations</li>
+                    <li>Your last known position (see <a href="#location">section 2</a>)</li>
+                    <li>A cache of charging-station data and downloaded offline country data</li>
+                    <li>Your vehicle profile (connector types, minimum charging power)</li>
+                    <li>App settings (e.g. theme, offline countries)</li>
+                    <li>Technical counters that control how often ads are shown</li>
+                </ul>
+                <p>We have no access to this data.</p>
+                <p><strong>Home-screen widget:</strong> If you add the widget, it shows nearby stations based on the locally stored station cache and your last known position.</p>
+
+                <h2 id="ads">5. Advertising &amp; consent</h2>
+                <p>The App is free and financed by advertising. We use <strong>Google AdMob</strong> (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland) to show banner, interstitial, app open and native ads. To deliver, measure and — where you have consented — personalize ads, Google processes in particular:</p>
+                <ul>
+                    <li>Advertising ID (a resettable device identifier)</li>
+                    <li>IP address and approximate location derived from it</li>
+                    <li>Device information (e.g. model, operating system, language, screen size)</li>
+                    <li>Interactions with ads, as well as diagnostic and performance data</li>
+                </ul>
+                <p>The App does <strong>not</strong> pass your GPS location to the ad service.</p>
+                <p><strong>Consent:</strong> In the European Economic Area, the UK and Switzerland, the App uses Google's User Messaging Platform (UMP) to ask for your consent before ads are requested. Ads are only loaded once the consent form allows it. The legal basis is your consent (Art. 6(1)(a) GDPR). You can change or withdraw your consent at any time under <strong>Profile &gt; Privacy Settings</strong> (shown in regions where this is required).</p>
+                <p>You can reset your Advertising ID or opt out of personalized ads in your Android settings (<em>Settings &gt; Google &gt; Ads</em> or <em>Settings &gt; Privacy &gt; Ads</em>, depending on your device). More information: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from apps that use its services</a> and <a href="https://myadcenter.google.com" target="_blank" rel="noopener">My Ad Center</a>.</p>
+
+                <h2 id="crash">6. Crash reports &amp; app rating</h2>
+                <p><strong>Crash reports:</strong> To find and fix errors, the App uses <strong>Firebase Crashlytics</strong> (Google Ireland Limited / Google LLC). If the App crashes, a crash report is sent to Google containing the stack trace, device model, Android version, app version, a crash timestamp and a pseudonymous Crashlytics installation ID. Crash reports do not contain your location, favorites or the Advertising ID. The legal basis is our legitimate interest in a stable, error-free app (Art. 6(1)(f) GDPR). Crash reports are deleted by Google after 90 days. More information: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy information</a>.</p>
+                <p><strong>App rating:</strong> The App may ask you to rate it using the <strong>Google Play In-App Review</strong> API. The rating dialog is provided by Google Play; we do not receive any personal data from it beyond the public review you choose to submit.</p>
+
+                <h2 id="backup">7. Android backup</h2>
+                <p>If you have enabled Android backup on your device, Android automatically backs up your favorites, station cache, vehicle profile, settings and last known position to your <strong>Google account</strong>, and they can be transferred when you move to a new device. This backup is controlled by you and processed by Google; we have no access to it. Consent and ad-related data are excluded. You can disable backup in your Android settings at any time.</p>
+
+                <h2 id="permissions">8. Permissions</h2>
+                <ul>
+                    <li><strong>Location</strong> (precise and/or approximate, foreground only) – to find stations near you, as described in <a href="#location">section 2</a>.</li>
+                    <li><strong>Internet / network state</strong> – for station data, live status, maps, offline data packs, crash reports and ads.</li>
+                    <li><strong>Advertising ID</strong> (<code>AD_ID</code> and Android ad services) – used by Google AdMob as described above.</li>
+                </ul>
+                <p>The App does <strong>not</strong> request background location, contacts, camera, microphone or storage access.</p>
+
+                <h2 id="children">9. Children</h2>
+                <p>The App is not directed at children under 13, and we do not knowingly collect personal information from children. If you believe a child has provided personal data through the App, please contact us.</p>
+
+                <h2 id="sharing">10. Data sharing &amp; international transfers</h2>
+                <p>We do not sell your personal data and do not share it with third parties beyond what is described in this policy. Google, Cloudflare and GitHub may process data on servers outside the EU, in particular in the USA. Google LLC, Cloudflare, Inc. and GitHub, Inc. are certified under the EU–U.S. Data Privacy Framework, on the basis of the European Commission's adequacy decision. Open Charge Map, the Overpass API and OpenFreeMap are independent open-data services; requests to them are processed under their own terms and privacy practices.</p>
+
+                <h2 id="deletion">11. Retention &amp; deletion</h2>
+                <p>Data stored on your device remains there until you delete it. You can:</p>
+                <ul>
+                    <li>remove individual favorites and delete your vehicle profile (<strong>Profile &gt; Delete Profile</strong>);</li>
+                    <li>switch off offline country data to stop downloads;</li>
+                    <li>clear the App's storage in Android settings or uninstall the App to remove all local data;</li>
+                    <li>delete the App's backup in your Google account / Android backup settings.</li>
+                </ul>
+                <p>Data processed by Google for advertising is retained according to Google's policies; crash reports are deleted after 90 days; data received by the map and station services is retained according to their policies.</p>
+
+                <h2 id="rights">12. Your rights</h2>
+                <p>Under the GDPR you have the right to access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20) and to object (Art. 21). You can withdraw consent at any time with effect for the future (Art. 7(3)). You also have the right to lodge a complaint with a data protection supervisory authority (Art. 77), for example the authority competent for us: <em>Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen (LDI NRW)</em>, Kavalleriestraße 2–4, 40213 Düsseldorf, <a href="https://www.ldi.nrw.de" target="_blank" rel="noopener">ldi.nrw.de</a>. Since we do not store your data on our own servers, most requests can be fulfilled directly on your device; for data processed by Google, please also refer to Google's privacy tools.</p>
+
+                <h2 id="changes">13. Changes &amp; contact</h2>
+                <p>We may update this policy when the App changes. The current version is always available at this address. For questions about privacy, contact us at <a href="mailto:astron.labs57@gmail.com">astron.labs57@gmail.com</a>.</p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrap foot">
+            <p>&copy; 2026 Astron Labs. All rights reserved.</p>
+            <nav aria-label="Footer">
+                <a href="/">Home</a>
+                <a href="/privacy.html">Privacy</a>
+                <a href="/impressum.html">Imprint</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
